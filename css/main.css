@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexWrap {
+    flex-wrap: wrap;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.navBar {
+    width: 100%;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.content {
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+}
+
+.display {
+    width: 45%;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
