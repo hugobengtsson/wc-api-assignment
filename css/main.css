@@ -12,12 +12,20 @@
     flex-wrap: wrap;
 }
 
+.flexColumn {
+    flex-direction: column;
+}
+
 .alignCenter {
     align-items: center;
 }
 
 .justifyCenter {
     justify-content: center;
+}
+
+.displayNone {
+    display: none;
 }
 
 .navBar {
@@ -44,4 +52,20 @@
     color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.removeButton {
+    margin-top: 20px;
+
+}
+
+.contentContainer {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.postContentContainer > p {
+    margin-top: 10px;
 }
