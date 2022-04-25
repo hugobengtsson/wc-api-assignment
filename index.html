@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <div id="loadingContainer" class="justifyCenter alignCenter">
+    <div id="loadingContainer" class="justifyCenter alignCenter displayNone">
         <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </div>
 
@@ -19,7 +19,7 @@
         <h2>ERP-Light</h2>
     </div>
 
-    <div class="content flex flexWrap justifyCenter">
+    <div class="content flex flexColumn alignCenter">
 
         <div class="display flex flexColumn">
             <div id="getProduct" class="button">Hämta alla produkter</div>
@@ -34,6 +34,7 @@
         <div class="display flex flexColumn">
             <div id="getOrder" class="button">Hämta alla ordrar</div>
             <div id="orderDisplay" class="flex flexColumn"></div>
+            <div id="removeOrders" class="button removeButton displayNone">Töm hämtningen</div>
         </div>
 
 

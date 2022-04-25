@@ -1,5 +1,6 @@
 import { renderPosts, removePosts } from "./renderPosts.js";
 import { renderProducts, returnProducts, removeProducts } from "./renderProducts.js";
+import { renderOrders, returnOrders, removeOrders } from "./renderOrders.js";
 
 
 function initSite(){
@@ -37,6 +38,7 @@ async function getProducts() {
 }
 
 async function getPosts() {
+
     let url = "./api/receivers/postReceiver.php";
 
     let GET = await makeRequest(url, {method: "GET"});
@@ -45,6 +47,18 @@ async function getPosts() {
 }
 
 async function getOrders() {
+
+    let url = "./api/receivers/orderReceiver.php";
+
+    let GET = await makeRequest(url, {method: "GET"});
+
+    // renderOrders(JSON.parse(GET));
+
+    let orders = returnOrders();
+    renderOrders(orders);
+
+
+
 
 }
 
@@ -55,6 +69,7 @@ function eventListeners() {
 
     document.getElementById("removePosts").addEventListener("click", removePosts);
     document.getElementById("removeProducts").addEventListener("click", removeProducts);
+    document.getElementById("removeOrders").addEventListener("click", removeOrders);
 
 
 }
