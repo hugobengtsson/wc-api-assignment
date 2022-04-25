@@ -11,6 +11,8 @@ eventListeners();
 
 async function makeRequest(url, option){
 
+    document.getElementById("loadingContainer").style.display = "flex";
+
     try {
         let response = await fetch(url, option);
         let result = response.json();
