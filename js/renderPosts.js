@@ -7,6 +7,7 @@ export function renderPosts(posts) {
     container.innerHTML = "";
 
     posts.forEach(post => {
+
         let title = post.title.rendered;
         let date = post.date;
         let content = post.content.rendered;
@@ -25,7 +26,6 @@ export function renderPosts(posts) {
         contentContainer.classList.add("postContentContainer");
         contentContainer.innerHTML = content;
 
-        console.log(title + ", " + content + ", " + date);
         renderContainer.append(titleH, dateContainer, contentContainer);
 
     });

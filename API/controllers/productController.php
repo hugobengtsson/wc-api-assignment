@@ -24,7 +24,7 @@
         //return $nonce;
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => 'http://localhost:3000/labb2-hugo/wp-json/wc/v3/products?oauth_consumer_key=ck_3fab00917df02c50077dc6b7f04deee92c06af4c&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650547143&oauth_nonce='.$nonce.'&oauth_version=1.0&oauth_signature=l5RdmRoq586skRNqqBsE9EhJIdo%253D',
+            CURLOPT_URL => 'http://localhost:3000/labb2-hugo/wp-json/wc/v3/products?oauth_consumer_key=ck_3fab00917df02c50077dc6b7f04deee92c06af4c&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650880716&oauth_nonce=ULtmz4PNNrq&oauth_version=1.0&oauth_signature=kxcuP1MfOlzngEVVnk%252BDEbXqlDo%253D',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
