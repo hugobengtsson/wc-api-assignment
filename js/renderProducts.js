@@ -36,6 +36,8 @@ export function renderProducts(products) {
         let removeButton = document.getElementById("removeProducts");
         removeButton.style.display = "block";
 
+        document.getElementById("loadingContainer").style.display = "none";
+
 }
 
 export function removeProducts() {

@@ -33,6 +33,8 @@ export function renderPosts(posts) {
     let removeButton = document.getElementById("removePosts");
     removeButton.style.display = "block";
 
+    document.getElementById("loadingContainer").style.display = "none";
+
 }
 
 export function removePosts() {
