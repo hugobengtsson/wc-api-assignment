@@ -1,4 +1,5 @@
 import { renderPosts, removePosts } from "./renderPosts.js";
+import { renderProducts, returnProducts, removeProducts } from "./renderProducts.js";
 
 
 function initSite(){
@@ -26,7 +27,10 @@ async function getProducts() {
 
     let GET = await makeRequest(url, {method: "GET"});
 
-    console.log(GET);
+    //renderProducts(JSON.parse(GET));
+
+    let products = returnProducts();
+    renderProducts(products)
 
 }
 
@@ -48,6 +52,7 @@ function eventListeners() {
     document.getElementById("getOrder").addEventListener("click", getOrders);
 
     document.getElementById("removePosts").addEventListener("click", removePosts);
+    document.getElementById("removeProducts").addEventListener("click", removeProducts);
 
 
 }
