@@ -1,7 +1,8 @@
 <?php
-
+    // Function for fetching orders from the API.
     function getOrders() {
 
+        // Curl code for fetching the API.
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
@@ -19,6 +20,7 @@
 
         curl_close($curl);
 
+        // Returning the response to the receiver.
         return $response;
 
     }

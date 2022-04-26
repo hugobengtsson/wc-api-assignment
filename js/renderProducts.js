@@ -1,5 +1,5 @@
 
-
+// Function for rendering out the products.
 export function renderProducts(products) {
 
         const container = document.getElementById("productDisplay");
@@ -36,10 +36,12 @@ export function renderProducts(products) {
         let removeButton = document.getElementById("removeProducts");
         removeButton.style.display = "block";
 
+        // Removing the loading animation.
         document.getElementById("loadingContainer").style.display = "none";
 
 }
 
+// Function for emptying the container for the rendered products.
 export function removeProducts() {
     const container = document.getElementById("productDisplay");
     container.innerHTML = "";
@@ -48,6 +50,7 @@ export function removeProducts() {
     removeButton.style.display = "none";
 }
 
+// Since the nonce is not working as expected this is the products that are being rendered.
 var productList = [
     {
         "id": 74,
@@ -900,7 +903,7 @@ var productList = [
     }
 ]
 
-
+// Function for returning the products to the function rendering the objects.
 export function returnProducts() {
     return productList;
 }

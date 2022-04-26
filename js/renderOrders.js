@@ -1,5 +1,5 @@
 
-
+// Function for rendering out the orders.
 export function renderOrders(orders) {
 
     const container = document.getElementById("orderDisplay");
@@ -31,10 +31,12 @@ export function renderOrders(orders) {
     let removeButton = document.getElementById("removeOrders");
     removeButton.style.display = "block";
 
+    // Removing the loading animation.
     document.getElementById("loadingContainer").style.display = "none";
 
 }
 
+// Function for emptying the container for the rendered orders.
 export function removeOrders() {
     const container = document.getElementById("orderDisplay");
     container.innerHTML = "";
@@ -43,6 +45,7 @@ export function removeOrders() {
     removeButton.style.display = "none";
 }
 
+// Since the nonce is not working as expected this is the orders that are being rendered.
 let orderList = [
     {
         "id": 106,
@@ -353,7 +356,7 @@ let orderList = [
     }
 ]
 
-
+// Function for returning the orders to the function rendering the objects.
 export function returnOrders() {
     return orderList;
 }
