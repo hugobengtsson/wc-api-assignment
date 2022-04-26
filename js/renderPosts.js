@@ -1,5 +1,5 @@
 
-
+// Function for rendering out the posts.
 export function renderPosts(posts) {
 
     const container = document.getElementById("postDisplay");
@@ -33,10 +33,12 @@ export function renderPosts(posts) {
     let removeButton = document.getElementById("removePosts");
     removeButton.style.display = "block";
 
+    // Removing the loading animation.
     document.getElementById("loadingContainer").style.display = "none";
 
 }
 
+// Function for emptying the container for the rendered posts.
 export function removePosts() {
     const container = document.getElementById("postDisplay");
     container.innerHTML = "";

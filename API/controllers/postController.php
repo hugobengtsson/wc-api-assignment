@@ -1,7 +1,8 @@
 <?php
-
+    // Function for fetching posts from the API.
     function getPosts() {
 
+        // Curl code for fetching the API.
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
@@ -18,6 +19,8 @@
         $response = curl_exec($curl);
 
         curl_close($curl);
+
+        // Returning the response to the receiver.
         return $response;
 
     }

@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* General classes. */
 .flex {
     display: flex;
 }
@@ -27,6 +28,8 @@
 .displayNone {
     display: none;
 }
+
+/* Specific classes: */
 
 .navBar {
     width: 100%;
@@ -56,7 +59,6 @@
 
 .removeButton {
     margin-top: 20px;
-
 }
 
 .contentContainer {
